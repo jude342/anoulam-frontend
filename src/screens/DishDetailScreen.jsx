@@ -23,7 +23,7 @@ export const DishDetailScreen = () => {
       try {
         const dishData = await fetchDishById(dishId);
         setDish(dishData);
-      } catch {
+      } catch(error) {
         // Remove any console log for security.
         // Insert any console logs when there's an issue that need to be address
       } finally {
