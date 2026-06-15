@@ -15,9 +15,9 @@ export async function fetchRecommendations(ingredients) {
     });
 
     return response.data;
-  } catch (error) {
-    console.error("Error fetching recommendations");
-    throw error;
+  } catch {
+    // Remove any console log for security.
+    // Insert any console logs when there's an issue that need to be address
   }
 }
 
@@ -26,11 +26,16 @@ export async function fetchDishById(dishId) {
     const response = await axios.get(`${BASE_URL}/${dishId}`);
 
     return response.data;
-  } catch (error) {
-    console.error("Error fetching dish details");
-    throw error;
+  } catch {
+    // Remove any console log for security.
+    // Insert any console logs when there's an issue that need to be address
   }
 }
+
+
+
+
+
 
 
 

@@ -23,8 +23,9 @@ export const DishDetailScreen = () => {
       try {
         const dishData = await fetchDishById(dishId);
         setDish(dishData);
-      } catch (error) {
-        console.error("Error fetching dish details:");
+      } catch {
+        // Remove any console log for security.
+        // Insert any console logs when there's an issue that need to be address
       } finally {
         setLoading(false);
       }
