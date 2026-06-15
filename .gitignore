@@ -39,3 +39,12 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# SECRETS
+.claude
+.expo
+node_modules
+.env
+AGENTS.md
+CLAUDE.md
+.gitignore
