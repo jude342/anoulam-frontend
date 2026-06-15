@@ -57,7 +57,7 @@ Aiven MySQL Database
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/anoulam-frontend.git
+git clone https://github.com/jude342/anoulam-frontend.git
 ```
 
 ### Install Dependencies
@@ -86,12 +86,10 @@ npx expo start
 
 ```text
 src/
-├── api/
+├── assets/
 ├── components/
-├── navigation/
 ├── screens/
 ├── services/
-└── assets/
 ```
 
 ---
@@ -99,7 +97,7 @@ src/
 ## 🎯 Future Features
 
 - Favorites
-- User ratings
+- Dish ratings
 - Most searched dishes
 - Offline support
 - Personalized recommendations
@@ -124,7 +122,7 @@ Through this project, I learned:
 
 Backend Repository:
 
-https://github.com/yourusername/anoulam-backend
+https://github.com/jude342/anoulam-backend
 
 ---
 
