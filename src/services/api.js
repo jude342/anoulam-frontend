@@ -16,7 +16,7 @@ export async function fetchRecommendations(ingredients) {
 
     return response.data;
   } catch (error) {
-    console.error("Error fetching recommendations: ", error);
+    console.error("Error fetching recommendations");
     throw error;
   }
 }
@@ -27,7 +27,7 @@ export async function fetchDishById(dishId) {
 
     return response.data;
   } catch (error) {
-    console.error("Error fetching dish details: ", error);
+    console.error("Error fetching dish details");
     throw error;
   }
 }
