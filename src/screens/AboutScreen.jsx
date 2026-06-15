@@ -44,9 +44,9 @@ const AboutScreen = () => {
             development, databases, and full-stack application design.
           </Text>
           <Text style={styles.secondaryText}>Version</Text>
-          <Text style={styles.Text}>1.0</Text>
+          <Text style={styles.center}>1.0</Text>
           <Text style={styles.secondaryText}>Developer</Text>
-          <Text style={styles.Text}>Jude Rey C. Garcia</Text>
+          <Text style={styles.center}>Jude Rey C. Garcia</Text>
         </View>
       </ScrollView>
     </GradientDesign>
@@ -62,33 +62,36 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   container: {
-    flex: 1,
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
+    paddingHorizontal: 30,
+    paddingBottom: 100,
   },
   headText: {
     fontSize: 30,
     fontWeight: "800",
     color: "#eadede",
     textAlign: "center",
-    margin: 20,
+    marginBottom: 40,
   },
   secondaryText: {
-    fontSize: 25,
+    fontSize: 22,
     fontWeight: "700",
     textAlign: "center",
     color: "#eadede",
-    marginTop: 40,
+    marginTop: 80,
+    marginBottom: 20,
   },
   Text: {
-    fontSize: 22,
+    fontSize: 16,
     textAlign: "justify",
     color: "#000000",
-    lineHeight: 35,
-    marginBottom: 100,
-    marginLeft: 30,
-    marginRight: 30,
-    marginTop: 20,
+    lineHeight: 28,
+    marginBottom: 20,
   },
+  center: {
+    fontSize: 16,
+    textAlign: 'center',
+    color: "#000000",
+    lineHeight: 28,
+    marginBottom: 20,
+  }
 });
