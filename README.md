@@ -115,6 +115,8 @@ Through this project, I learned:
 - Error handling
 - State management
 - Full-stack application development
+- Basic Token Authentication
+- Important libraries such as AXIOS, and many more
 
 ---
 

@@ -1,36 +1,36 @@
-// Library for sending requests
-import axios from "axios";
-
-// URL's for the API endpoints
-const BASE_URL = process.env.EXPO_PUBLIC_API_URL;
-const RECOMMENDATION_URL = `${BASE_URL}/recommendations`;
+import apiService from "./apiService";
 
 // Methods
 export async function fetchRecommendations(ingredients) {
   try {
-    const response = await axios.post(RECOMMENDATION_URL, ingredients, {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-
+    const response = await apiService.post("/recommendations", ingredients, {});
     return response.data;
-  } catch {
-    // Remove any console log for security.
-    // Insert any console logs when there's an issue that need to be address
+  } catch (error) {
+    if (error.response?.status === 429) {
+      alert("Whoa, slow down Bro! You are clicking too fast.");
+    }
   }
 }
 
 export async function fetchDishById(dishId) {
   try {
-    const response = await axios.get(`${BASE_URL}/${dishId}`);
-
+    const response = await apiService.get(`/${dishId}`);
     return response.data;
-  } catch {
-    // Remove any console log for security.
-    // Insert any console logs when there's an issue that need to be address
+  } catch (error) {
+    if (error.response?.status === 429) {
+      alert("Whoa, slow down Bro! You are clicking too fast.");
+    }
   }
 }
+
+
+
+
+
+
+
+
+
 
 
 

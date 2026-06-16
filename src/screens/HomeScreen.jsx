@@ -14,7 +14,7 @@ import { Ionicons } from "@expo/vector-icons";
 import GradientDesign from "../components/GradientDesign";
 import IngredientTag from "../components/IngredientTag";
 import RecipeCard from "../components/RecipeCard";
-import { fetchRecommendations } from "../services/api";
+import { fetchRecommendations } from "../services/dishService";
 import DishDetail from "../../app/DishDetail";
 import { useRouter, useNavigation } from "expo-router";
 import HamburgerMenu from "../components/HamburgerMenu";

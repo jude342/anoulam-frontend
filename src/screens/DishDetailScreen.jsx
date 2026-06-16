@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { fetchDishById } from "../services/api";
+import { fetchDishById } from "../services/dishService";
 import {
   View,
   ScrollView,
@@ -23,9 +23,7 @@ export const DishDetailScreen = () => {
       try {
         const dishData = await fetchDishById(dishId);
         setDish(dishData);
-      } catch(error) {
-        // Remove any console log for security.
-        // Insert any console logs when there's an issue that need to be address
+      } catch (error) {
       } finally {
         setLoading(false);
       }
