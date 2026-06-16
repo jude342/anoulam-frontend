@@ -15,7 +15,7 @@
 | :---: | :---: | :---: | :---: | :---: |
 | ![Home Screen](./docs/HomeScreen.png) | ![Menu Screen](./docs/HomeScreen_Menu.png) | ![Dish Discovery](./docs/DishDetailScreen.png) | ![About Screen](./docs/AboutScreen.png) | ![Credits Screen](./docs/CreditsScreen.png) |
 
-## 🏗️ Architecture
+## Architecture
 
 ```text
 User
@@ -29,7 +29,7 @@ Aiven MySQL Database
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -52,7 +52,7 @@ Aiven MySQL Database
 ---
 
 
-## 🚀 Installation
+## Installation
 
 ### Clone Repository
 
@@ -82,7 +82,7 @@ npx expo start
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 src/
@@ -94,7 +94,7 @@ src/
 
 ---
 
-## 🎯 Future Features
+## Future Features
 
 - Favorites
 - Dish ratings
@@ -104,7 +104,7 @@ src/
 
 ---
 
-## 📚 Lessons Learned
+## Lessons Learned
 
 Through this project, I learned:
 
@@ -120,7 +120,7 @@ Through this project, I learned:
 
 ---
 
-## 🔗 Related Repository
+## Related Repository
 
 Backend Repository:
 
@@ -128,7 +128,7 @@ https://github.com/jude342/anoulam-backend
 
 ---
 
-## 👨‍💻 Developer
+## Developer
 
 Developed by Jude
 
