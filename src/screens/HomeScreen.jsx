@@ -19,17 +19,50 @@ import DishDetail from "../../app/DishDetail";
 import { useRouter, useNavigation } from "expo-router";
 import HamburgerMenu from "../components/HamburgerMenu";
 
+const persistedSearchState = {
+  errorMessage: "",
+  ingredients: [],
+  textInput: "",
+  dishes: [],
+  loading: false,
+};
+
 const HomeScreen = () => {
   // For navigation Purposes
   const router = useRouter();
   const navigation = useNavigation();
 
-  const [errorMessage, setErrorMessage] = useState("");
-  const [ingredients, setIngredients] = useState([]);
-  const [textInput, setTextInput] = useState("");
-  const [dishes, setDishes] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessageState] = useState(persistedSearchState.errorMessage);
+  const [ingredients, setIngredientsState] = useState(persistedSearchState.ingredients);
+  const [textInput, setTextInputState] = useState(persistedSearchState.textInput);
+  const [dishes, setDishesState] = useState(persistedSearchState.dishes);
+  const [loading, setLoadingState] = useState(persistedSearchState.loading);
   const [showMenu, setShowMenu] = useState(false);
+
+  const setErrorMessage = (value) => {
+    persistedSearchState.errorMessage = value;
+    setErrorMessageState(value);
+  };
+
+  const setIngredients = (value) => {
+    persistedSearchState.ingredients = value;
+    setIngredientsState(value);
+  };
+
+  const setTextInput = (value) => {
+    persistedSearchState.textInput = value;
+    setTextInputState(value);
+  };
+
+  const setDishes = (value) => {
+    persistedSearchState.dishes = value;
+    setDishesState(value);
+  };
+
+  const setLoading = (value) => {
+    persistedSearchState.loading = value;
+    setLoadingState(value);
+  };
   const [topDishes, setTopDishes] = useState([
     {
       id: 1,
