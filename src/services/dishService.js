@@ -8,8 +8,9 @@ export async function fetchRecommendations(ingredients) {
   } catch (error) {
     if (error.response?.status === 429) {
       alert("Whoa, slow down Bro! You are clicking too fast.");
+      return [];
     }
-    return [];
+    throw error;
   }
 }
 
@@ -21,6 +22,7 @@ export async function fetchDishById(dishId) {
     if (error.response?.status === 429) {
       alert("Whoa, slow down Bro! You are clicking too fast.");
     }
+    throw error;
   }
 }
 
