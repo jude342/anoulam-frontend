@@ -138,7 +138,7 @@ const HomeScreen = () => {
             <View style={styles.logoHeader}>
               <Image
                 style={styles.logo}
-                source={require("../assets/icon/AnoUlamLogo.png")}
+                source={require("../../assets/icon.png")}
               />
               <View>
                 <Text style={styles.logoFonts}>AnoUlam</Text>

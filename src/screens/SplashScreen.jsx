@@ -18,7 +18,7 @@ export default function SplashScreen() {
     <GradientDesign>
       <View style={styles.container}>
         <Image style={styles.logo}
-          source={require('../assets/icon/AnoUlamLogo.png')} />
+          source={require('../../assets/splash-icon.png')} />
         <Text style={styles.title}>Ano ang luto ngayong araw?</Text>
       </View>
       <View>
