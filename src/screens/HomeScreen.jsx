@@ -93,7 +93,7 @@ const HomeScreen = () => {
       try {
         setErrorMessage("");
         const backendResults = await fetchRecommendations(ingredients);
-        setDishes(backendResults);
+        setDishes(Array.isArray(backendResults) ? backendResults : []);
       } catch (error) {
         const isNetworkError = !error.response;
         setErrorMessage(
@@ -101,6 +101,7 @@ const HomeScreen = () => {
             ? "Walang internet connection o Hindi maabot ang server."
             : "Hindi maabot ang server. Subukan ulit mamaya.",
         );
+        setDishes([]);
       } finally {
         setLoading(false);
       }
@@ -124,7 +125,7 @@ const HomeScreen = () => {
   };
 
   const isSearching = ingredients.length > 0;
-  const displayedDishes = isSearching ? dishes : topDishes;
+  const displayedDishes = isSearching ? dishes ?? [] : topDishes;
 
   return (
     <ScrollView
@@ -160,6 +161,7 @@ const HomeScreen = () => {
               <TextInput
                 style={styles.searchFont}
                 placeholder="Maglagay ng sangkap (e.g. itlog)"
+                placeholderTextColor="#718096"
                 value={textInput}
                 onChangeText={setTextInput}
                 onSubmitEditing={handleAddIngredient}

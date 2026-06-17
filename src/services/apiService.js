@@ -7,7 +7,7 @@ const API_TOKEN_KEY = process.env.EXPO_PUBLIC_SECRET_TOKEN;
 
 const apiService = axios.create({
   baseURL: BASE_URL,
-  timeout: 7000,
+  timeout: 120000,
 });
 
 apiService.interceptors.request.use(

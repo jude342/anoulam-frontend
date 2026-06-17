@@ -4,11 +4,12 @@ import apiService from "./apiService";
 export async function fetchRecommendations(ingredients) {
   try {
     const response = await apiService.post("/recommendations", ingredients, {});
-    return response.data;
+    return Array.isArray(response.data) ? response.data : [];
   } catch (error) {
     if (error.response?.status === 429) {
       alert("Whoa, slow down Bro! You are clicking too fast.");
     }
+    return [];
   }
 }
 
