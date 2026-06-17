@@ -72,6 +72,7 @@ Create a `.env` file:
 
 ```env
 EXPO_PUBLIC_API_URL=YOUR_BACKEND_URL
+EXPO_PUBLIC_SECRET_TOKEN=YOUR TOKEN KEY
 ```
 
 ### Start Application
