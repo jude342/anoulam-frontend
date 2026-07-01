@@ -85,7 +85,7 @@ npx expo start
 
 ## Project Structure
 
-```textt
+```text
 src/
 ├── assets/
 ├── components/
