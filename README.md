@@ -131,7 +131,7 @@ https://github.com/jude342/anoulam-backend
 
 ## Developer
 
-Developed by Jude
+Developed by Jude Rey
 
 Built with the goal of helping Filipino families discover meals more easily while learning modern full-stack software development.
 
